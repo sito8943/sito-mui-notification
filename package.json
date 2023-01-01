@@ -1,0 +1,56 @@
+{
+  "name": "sito-mui-notification",
+  "version": "0.2.7",
+  "description": "sito-mui-notification",
+  "private": false,
+  "dependencies": {
+    "react-cool-onclickoutside": "^1.7.0",
+    "sito-mui-error-component": "^0.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/cli": "^7.17.6",
+    "@babel/preset-react": "^7.16.7",
+    "babel-preset-minify": "^0.5.2"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "publish:npm": "babel src/ -d dist --copy-files",
+    "build:min": "BABEL_ENV=minify babel src/ -d dist --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "@mui",
+    "react",
+    "notification",
+    "context"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SitoNumbis/sito-mui-notification.git"
+  },
+  "license": "ISC",
+  "author": "SitoNumbis",
+  "bugs": {
+    "url": "https://github.com/SitoNumbis/sito-mui-notification/issues"
+  },
+  "homepage": "https://github.com/SitoNumbis/sito-mui-notification#readme"
+}
