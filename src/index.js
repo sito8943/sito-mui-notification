@@ -1,9 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+
+// sito components
+import ErrorBoundary from "sito-mui-error-component";
 
 import Notification from "./Component";
 import { NotificationProvider } from "./Context";
-import ErrorBoundary from "sito-mui-error-component";
 
 const NotificationContext = (props) => {
   const { children } = props;
@@ -18,5 +19,4 @@ const NotificationContext = (props) => {
   );
 };
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<NotificationContext />);
+export default NotificationContext;
