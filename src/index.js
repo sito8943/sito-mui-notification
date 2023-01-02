@@ -4,7 +4,9 @@ import React from "react";
 import ErrorBoundary from "sito-mui-error-component";
 
 import Notification from "./Component";
-import { NotificationProvider } from "./Context";
+import { NotificationProvider, useNotification } from "./Context";
+
+export { Notification, useNotification };
 
 const NotificationContext = (props) => {
   const { children } = props;
